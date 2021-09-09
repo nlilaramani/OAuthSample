@@ -37,8 +37,8 @@ public class WebSecurityConfigurer extends WebSecurityConfigurerAdapter {
             System.out.println("In configure()");
                 auth
                 .inMemoryAuthentication()
-                .withUser("john.carnell").password("{noop}password1").roles("USER")
+                .withUser("testuser1").password("{noop}password1").roles("USER")
                 .and()
-                .withUser("william.woodward").password("{noop}password2").roles("USER", "ADMIN");
+                .withUser("testuser2").password("{noop}password2").roles("USER", "ADMIN");
     }
 }
