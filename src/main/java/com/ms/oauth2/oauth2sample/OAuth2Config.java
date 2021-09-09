@@ -30,8 +30,8 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         System.out.println("In Oauth2.configure()");
         clients.inMemory()
-                .withClient("eagleeye")
-                .secret("{noop}thisissecret")
+                .withClient("ecommerce")
+                .secret("{noop}secretkey")
                 .authorizedGrantTypes("refresh_token", "password", "client_credentials")
                 .scopes("webclient", "mobileclient");
     }
